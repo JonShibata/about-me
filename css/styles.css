@@ -1,0 +1,66 @@
+.center {
+  margin: auto;
+}
+
+.page-title {
+  font-family: "Consolas";
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.content-container {
+  font-family: "Consolas";
+  margin: 0 auto;
+  max-width: 100ch;
+  font-size: medium;
+}
+
+.section-heading {
+
+  font-size: 2em;
+  color: #555;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.main-text {
+
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.navbar {
+  font-family: "Consolas";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0051ff;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  font-family: "Consolas";
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar .left {
+  flex: 1;
+}
+
+.navbar .right {
+  display: flex;
+  gap: 10px;
+}

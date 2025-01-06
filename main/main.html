@@ -1,5 +1,4 @@
 <html>
-
 <script>
     function includeHTML() {
         var z, i, elmnt, file, xhttp;
@@ -30,42 +29,119 @@
     };
 </script>
 
-
-
 <head>
-    <title>Shibata-Fam</title>
+    <title>Jon Shibata</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
     <div nav-bar="nav_bar.html"></div>
 
-    <h1 class="page-title">Shibata - Family</p>
-        <table class="center">
-            <tr>
-                <td>
-                    <h2 class="section-heading">The Crew</h2><br>
-                    <p class="main-text">
-                        Here is my real love and joy. <br>
-                        This is my wife Peggy and I with our 6 kids.
-                    </p>
-                </td>
-                <td>
-                    <img src="https://lh3.googleusercontent.com/pw/AP1GczP2viI4gDqhan7rYUlANAISxyUaIXxfnuk5LxSBH6phTncXtpZsV6ejQe7cgTZPTWKlib8jwwrGTCHCfhxdH-CsGlYVWepRKnttrEtEEdH00Tksd4Xo=w2400"
-                        alt="Family Photo" style="width:850px;height:675px;">
-                    <!-- original is 4257 × 3371 -->
+    <h1 class="page-title">Jon Shibata - Projects</p>
 
-                    <!-- 
-                    <img sr="https://drive.google.com/drive-viewer/AKGpihaRYOJiB3z8b1xyESr8Y3hPw9YRxQJrsuZzly7wPUMIVn8ogGbxbR1ePQNT_EsH-wds4iWZgys8bFRqqDlIAn8glhg60_G5Ssg=s1600-rw-v1"
-                        alt="Family Photo" style="width:850px;height:675px;"> -->
-                    <!-- https://drive.google.com/file/d/1m6mFD-5X_LEUl7hX9W2j4lU5eGM78Q5M/view?usp=drive_link -->
-                    <!-- https://www.labnol.org/embed/google/drive -->
+        <div class="content-container">
+            <h2 class="section-heading">ROS2 Path Follower</h2><br>
+            <p class="main-text">
+                I am working on this project to gain experience in the Robot Operating System (ROS2). Using Windows
+                Subsystem for Linux (WSL) I installed ROS2. The intent is to use the standard examples using turtle sim
+                where each turtle can publish their pose data and interact with each other. Using the learnings the
+                simulation has a lead turtle that performs a prescribed path. The lead turtle publishes its pose for the
+                follower turtle to record as a desired path. The follower turtle controls its heading to follow the
+                prescribed path. One design goal is to request input from the user any time the path is blocked. This
+                input supplies options for the follower turtle to navigate around the blockage. <br><br>
 
-                </td>
-            </tr>
-        </table>
-        <br><br>
+                <a href="https://github.com/JonShibata/leader_follower">Github repo</a><br><br>
+            </p>
 
+
+            <h2 class="section-heading">Library List</h2><br>
+            <p class="main-text">
+                This is a project that I created using python, selenium, github actions, and java script to automate a
+                common task. It scrapes the library web site for the books that my family has checked out then creates a
+                web page with title and due date to creates a checklist. The java script allows sorting the books by
+                title
+                or due date. It also allows checking off the books as the are found around the house so we know we have
+                found them all.<br><br>
+                <a href="https://github.com/JonShibata/LibraryList">Github repo</a> -
+                <a href="https://jonshibata.github.io/LibraryList/">Example Output</a><br><br>
+            </p>
+
+            <h2 class="section-heading">Fryganza</h2><br>
+            <p class="main-text">
+                When a deep frier temperature controller was malfunctioning I decided to upgrade the system. This is an
+                arduino C++ project using an ESP32 board configured to be a wifi access point. It serves a web page for
+                user
+                input and displays the current temperature. A servo motor is used to control the burners on the deep
+                frier.
+                <br><br>
+
+                Deep frying with friends is even more fun that frying alone so monitoring temperatures of multiple
+                friers
+                was a later add on. The access point ESP32 was upgraded to accept data from a second arduino wifi board.
+                The
+                web page can serve up the data from both friers. <br><br>
+                <a href="https://github.com/JonShibata/Fryganza">Github repo - Access Point and Controller</a> -
+                <a href="https://jonshibata.github.io/Fryganza/">Example GUI with temperature set point and
+                    timer</a><br><br>
+                <a href="https://github.com/JonShibata/TempReporter2">Github repo - Second temperature monitor</a>
+            </p>
+
+
+            <h2 class="section-heading">Room Monitor</h2><br>
+            <p class="main-text">
+                The idea for this project was inspired by my children who can never seem to fully close any door. One
+                particular pet peeve of mine is the sliding door of the walk out basement. Repeatedly echoing, "Make
+                sure
+                the door is closed." has translated in their heads as "slam the door as hard as possible." This usually
+                is
+                executed as push the door as hard as possible and then let go. The door then rebounds and opens back
+                up...
+                despite their "best" efforts. This arduino C++ project aims to address the door open problem by
+                monitoring a
+                sensor on the door and creating an audible tone when the door is ajar. <br><br>
+
+                I realized that I would also like to prevent them from leaving the lights on the basement. I added a
+                some
+                light sensors to the project. To prevent false alarms during the day I needed to know if it was daylight
+                outside. So the project connects to a google sheet that uses a web api to get sunrise and sunset times.
+                Adding some functionality to the google sheet allowed me to send myself an email if the light was left
+                on.
+                To prevent false alarms a motion sensor was added to determine if someone is really in the basement.
+                <br><br>
+
+                At some point I thought it would be a fun idea to monitor the temperature change if the door is left
+                open in
+                winter time. I added a temperature and humidity sensor and started pushing the data to the google sheet.
+                <br><br>
+
+                <a href="https://github.com/JonShibata/RoomMonitor">Github repo</a><br><br>
+            </p>
+
+
+            <h2 class="section-heading">Gift Exchange</h2><br>
+            <p class="main-text">
+                My sister wanted to do a completely blind secret santa gift exchange. We found some sites that would
+                take
+                the input and generate a list, but that didn't meet the requirements of completely blind because one
+                person
+                still had to take the results and send them out. This project was designed to be able to generate the
+                list
+                and then automatically email the participants in the exchange with only the person that they were to buy
+                for. <br><br>
+
+                Over time the exchange changed to where my kids and my nieces and nephews were exchanging gifts. The
+                main
+                goal of the revised script was to make sure that it was randomly picked, but to account for the desire
+                to
+                weight is towards someone they had not gifted to in a while. <br><br>
+
+                The initial script was written in the matlab scripting language. This version is after it was converted
+                to
+                python. <br><br>
+                <a href="https://github.com/JonShibata/RoomMonitor">Github repo</a><br><br>
+            </p>
+
+        </div>
         <script>
             includeHTML();
         </script>

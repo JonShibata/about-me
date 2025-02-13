@@ -85,6 +85,24 @@
   text-align: left;
 }
 
+.h5-title {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+
+.fake {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
 
 .main-text {
   font-size: 1em;

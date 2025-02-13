@@ -2,53 +2,25 @@
   margin: auto;
 }
 
-.page-title {
-  font-family: "Consolas";
-  font-size: 2.5em;
-  color: #333;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.content-container {
-  font-family: "Consolas";
-  margin: 0 auto;
-  max-width: 100ch;
-  font-size: medium;
-}
-
-.section-heading {
-
-  font-size: 2em;
-  color: #555;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-.main-text {
-
-  font-size: 1em;
-  color: #666;
-  line-height: 1.6;
-  text-align: left;
-  margin-left: 30px;
-}
-
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   font-family: "Consolas";
+  font-size: 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #0051ff;
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 
 .navbar a {
   font-family: "Consolas";
   color: white;
   text-decoration: none;
-  padding: 14px 20px;
+  padding: 10px 10px;
 }
 
 .navbar a:hover {
@@ -63,4 +35,71 @@
 .navbar .right {
   display: flex;
   gap: 10px;
+}
+
+.page-title {
+  position: fixed;
+  top: 32px;
+  left: 0;
+  right: 0;
+  font-family: "Consolas";
+  font-size: 2em;
+  color: #333;
+  background-color: #ddd;
+  text-align: center;
+}
+
+.content-container {
+  font-family: "Consolas";
+  margin-top: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100ch;
+  font-size: medium;
+}
+
+.h2-title {
+  font-size: 2em;
+  font-weight: normal;
+  color: #555;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.h3-title {
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.h4-title {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+
+.main-text {
+  font-size: 1em;
+  font-weight: normal;
+  color: #666;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.bullet-list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.bullet-list .sub-bullet-list {
+  list-style-type: circle;
+  margin-left: 20px;
 }

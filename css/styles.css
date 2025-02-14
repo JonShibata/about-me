@@ -17,6 +17,7 @@
   max-width: 50%;
   height: auto;
   max-height: 100vh;
+  padding-left: 20px;
   padding-right: 20px;
   object-fit: contain;
 }
